@@ -1,0 +1,20 @@
+group 'utmStatus'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '+'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '+'
+    compile group: 'org.json', name: 'json', version: '+'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:+'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
